@@ -2,13 +2,17 @@
 import requests as req
 import base64
 import json
+import sys
+
+sys.path.append('../')
+from device_info import ip, passwd, images_base64
+
 
 # 获取用户信息
-post_url = "http://192.168.1.91:8080/userManage/getUserInfo"
-
+post_url = "http://"+ip+":8080/userManage/getUserInfo"
 data = {
-    'pass': 'e10adc3949ba59abbe56e057f20f883e',
-    'user_id': '1604573320777'
+    'pass': passwd,
+    'user_id': 'baidu0000007'
 }
 
 json_data = json.dumps(data)

@@ -6,7 +6,14 @@ import json
 """
 批量删除用户信息
 """
-post_url = "http://192.168.1.91:8080/userManage/deleteUserInfo"
+import sys
+
+sys.path.append('../')
+from device_info import ip, passwd, images_base64
+
+
+# 获取用户信息
+post_url = "http://"+ip+":8080/userManage/deleteUserInfo"
 
 data = {
     'pass': 'e10adc3949ba59abbe56e057f20f883e',

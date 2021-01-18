@@ -3,14 +3,17 @@ import requests as req
 import base64
 import json
 import time
+import sys
 
+sys.path.append("../")
+from device_info import ip, passwd, images_base64
 # -*- coding: utf-8 -*-
 
 start_time = time.time()
-post_url = "http://192.168.1.88:8080/recognitionManage/identify"
+post_url = "http://"+ip+":8080/recognitionManage/identify"
 
 # image_path = '/home/hanchunyu/fengniao/userManage/杨洪天_006_男.jpg'
-image_path = '/home/hanchunyu/fengniao/userManage/a.jpg'
+image_path = 'D:\\Data\\fengniao_http\\a.jpg'
 
 with open(image_path, 'rb') as f:
     image = f.read()

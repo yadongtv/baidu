@@ -6,22 +6,26 @@ import requests as req
 import base64
 import json
 import time
+import sys
+
+sys.path.append('../')
+from device_info import ip, passwd, images_base64
 
 # -*- coding: utf-8 -*-
 # 添加用户
 
 start_time = time.time()
-post_url = "http://192.168.1.18:8080/userManage/addUser"
+post_url = "http://" + ip + ":8080/userManage/addUser"
 
 # image_path = '/home/hanchunyu/fengniao/userManage/杨洪天_006_男.jpg'
 # image_path = 'D:\\Data\\img\\data\\天哥.jpg'
 # image_path = 'D:\\Data\\img\\data\\晨哥.jpg'
 # image_path = 'D:\\Data\\img\\data\\华哥.jpg'
 # image_path = 'D:\\Data\\img\\data\\阿东.jpg'
-# image_path = 'D:\\Data\\img\\data\\强sir.JPG'
+# image_path = 'D:\\Data\\img\\data\\强sir.JPG'a
 # image_path = 'D:\\Data\\img\\data\\吴将军.JPG'
 # image_path = 'D:\\Data\\img\\data\\兴.JPG'
-image_path = 'D:\\Data\\img\\data\\贾老板.jpg'
+image_path = 'D:\\Data\\fengniao_http\\a.jpg'
 
 
 
@@ -35,7 +39,7 @@ image_base64 = str(base64.b64encode(image), encoding='utf-8')
 # print(image_base64)
 
 data = {
-    'pass': 'e10adc3949ba59abbe56e057f20f883e',
+    'pass': passwd,
     'user_id': 'baidu0000007',
     'image_content': image_base64,
     'image_type': 'image',

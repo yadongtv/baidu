@@ -1,7 +1,7 @@
 import hashlib
 import base64
 
-ip = "192.168.1.124"
+ip = "192.168.1.182"
 password = "123456"
 
 md5 = hashlib.md5()  # 要加密的字符串

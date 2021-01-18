@@ -3,19 +3,23 @@ import requests as req
 import base64
 import json
 import time
+import sys
+
+sys.path.append("../")
+from device_info import ip, passwd, images_base64
 
 # -*- coding: utf-8 -*-
 
 start_time = time.time()
-post_url = "http://192.168.1.102:8080/recognitionManage/match"
+post_url = "http://" + ip + ":8080/recognitionManage/match"
 
 # 1
 # image_path_1 = 'D:\\桌面\\蜂鸟\\picker\\3\\1.jpg'
 # image_path_2 = 'D:\\桌面\\蜂鸟\\picker\\3\\2.jpg'
 
 # 1.1
-image_path_1 = 'D:\\桌面\\蜂鸟\\picker\\3\\3.jpg'
-image_path_2 = 'D:\\桌面\\蜂鸟\\picker\\3\\4.jpg'
+image_path_1 = 'D:\\Data\\fengniao_http\\1.jpg'
+image_path_2 = 'D:\\Data\\fengniao_http\\a.jpg'
 
 # 2
 # image_path_1 = 'D:\\桌面\\蜂鸟\\picker\\2\\1.jpg'
