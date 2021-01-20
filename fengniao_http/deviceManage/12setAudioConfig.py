@@ -15,7 +15,7 @@ post_url = "http://" + ip + ":8080/deviceManage/setAudioConfig"
 data = {
     'pass': passwd,
     'audio_on': True,
-    'audio_pack': '12',
+    'audio_pack': '00',
     'feedback_audio': False,
 }
 

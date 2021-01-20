@@ -16,7 +16,7 @@ post_url = "http://" + ip + ":8080/deviceManage/setRecognitionCallback"
 data = {
     "pass": passwd,
     "callback_url": "http://192.168.1.1:8011/face",
-    "interval_time": 60
+    "interval_time": 100
 }
 
 json_data = json.dumps(data)

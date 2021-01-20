@@ -24,7 +24,7 @@ post_url = "http://" + ip + ":8080/deviceManage/setWiredNetwork"
 data = {
     'pass': passwd,
     'DHCP': False,
-    "IP": "192.168.3.182",
+    "IP": "192.168.1.183",
     "gateway": "192.168.1.1",
     "subnet_mask": "255.255.255.0",
     "DNS": "192.168.1.1"

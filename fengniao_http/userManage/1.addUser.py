@@ -25,7 +25,7 @@ post_url = "http://" + ip + ":8080/userManage/addUser"
 # image_path = 'D:\\Data\\img\\data\\强sir.JPG'a
 # image_path = 'D:\\Data\\img\\data\\吴将军.JPG'
 # image_path = 'D:\\Data\\img\\data\\兴.JPG'
-image_path = 'D:\\Data\\fengniao_http\\a.jpg'
+image_path = 'D:\\Desktop\\gouhaoyan.JPEG'
 
 
 
@@ -45,7 +45,7 @@ data = {
     'image_type': 'image',
     'user_info': {
         'user_type': 1,
-        'name': 'jia哥',
+        'name': 'gouhaoyan',
         "card_number": "3644243977"
     },
 }
