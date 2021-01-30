@@ -7,7 +7,7 @@ password = "123456"
 md5 = hashlib.md5()  # 要加密的字符串
 md5.update(password.encode("utf-8"))
 passwd = md5.hexdigest()
-print(passwd)
+# print(passwd)
 
 
 def images_base64(image_path):
